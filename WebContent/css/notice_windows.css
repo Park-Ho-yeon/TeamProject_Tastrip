@@ -1,0 +1,103 @@
+*{
+    font-family: 'Pretendard-Regular';
+}
+a{
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+.disFlex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
+
+/* --------HEADER-------*/
+header{
+    width: 100%;
+}
+header>div{
+    height: 100%;
+    padding-bottom: 10px;
+    margin: 0 10px;
+    border-bottom: rgba(170, 134, 86, 0.638) solid 1px;
+}
+header>div:first-child{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 12px;
+    margin: 0 10px;
+    border-top: rgb(242,142,38) solid 2px;
+    border-bottom: rgba(170, 134, 86, 0.638) solid 1px;
+}
+header div>div{
+    display: flex;
+}
+header div p{
+    line-height: 30px;
+    margin-left: 10px;
+    font-size: 11px;
+    color: rgb(152, 152, 152);
+}
+header div>p{
+    margin-right: 10px;
+}
+.logo{
+    height: 30px;
+    margin-left: 15px;
+}
+.title{
+    padding-top: 15px;
+    font-size: 18px;
+    font-weight: 800;
+    color: black;
+}
+
+/*------- CONTENT --------*/
+#content{
+    padding: 10px 0;
+    margin: 0 10px;
+    border-bottom: rgba(170, 134, 86, 0.638) solid 1px;
+}
+#content i{
+    margin-right: 3px;
+}
+#content>p{
+    text-align: right;
+    padding-right: 10px;
+    color: gray;
+}
+#content div{
+    padding: 0 10px;
+    margin-top: 10px;
+}
+#content div p{
+    line-height: 30px;
+}
+.input_button{
+    padding: 10px 0;
+    text-align: center;
+    margin: 0 10px;
+    border-bottom: rgb(242,142,38) solid 2px;
+}
+input{
+    display: inline-block;
+    height: 30px;
+    width: 60px;
+    text-align: center;   
+}
+/* ----- FOOTER ----- */
+.footer_ul{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.footer_ul img{
+    width: 100px;
+    opacity: 0.5;
+    vertical-align: middle;
+}
+.footer>ul:last-child li:last-child{
+    line-height: 25px;
+}

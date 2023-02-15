@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/17da812ad5.js" crossorigin="anonymous"></script>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <link 
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <script src="js/script.js"></script>
+    <title>테이스트립 Tastrip :: 당신의 입맛 여행</title>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="top_menu m_auto disFlex justify-space-between">
+            <a href="" class="logo">
+                <!-- <img src="images/logo.png" alt=""> -->
+            </a>
+            <ul class="disFlex">
+                <li><a href="member/member_login.html">로그인</a></li>
+                <li><a href="member/member_join.html">회원가입</a></li>
+                <li><a href="">관심 맛집</a></li>
+                <li><a href="">리뷰쓰기</a></li>
+            </ul>
+        </div>
+        <div class="search_bar disFlex justify-space-between">
+            <div>
+                <p>원하는 조건으로 맛집 찾기!</p>
+                <p>
+                    <span>#데이트</span>
+                    <span>#회식</span>
+                    <span>#혼밥</span>
+                    <span>#분위기좋은</span>
+                </p>
+            </div>
+            <ul class="disFlex">
+                <li><input type="text" class="search_1" placeholder="지역"></li>
+                <li><input type="text" class="search_2" placeholder="가게이름, 메뉴"></li>
+                <li class="search_li">
+                    <input type="text" class="search_3" placeholder="키워드 선택">
+                    <div class="theme_box">
+                        <ul class="control-group">
+                            <li>
+                                <label class="control control-checkbox">
+                                    혼밥
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    인스타감성
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    튀김
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    국수/면
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    비 오는 날
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    든든한 한끼
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    매운
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    브런치
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    다이어트
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    데이트
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    해물요리
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    달콤
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    프레쉬
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    볶음
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    밥도둑
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    해장
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    아이동반
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    오마카세
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    제철
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    이열치열
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    집밥
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    회식
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    무한리필
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    단체예약가능
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    몸보신
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    선술집
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="control control-checkbox">
+                                    노키즈존
+                                    <input type="checkbox" name="theme" value="">
+                                    <div class="control_indicator"></div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li><input type="button" value="검색"></li>
+            </ul>
+            
+        </div>
+    </header>
+    <!-- /HEADER END -->
+
+    <!-- CONTENT -->
+    <div id="content_wrap">
+        <!-- RIGHT CONTENTS -->
+        <div class="numbering disFlex justify-space-between">
+            <ul>
+                <li>등록된 가게</li>
+                <li>870<span>개</span></li>
+            </ul>
+            <ul>
+                <li>등록된 리뷰</li>
+                <li>1.2천<span>개</span></li>
+            </ul>
+            <ul>
+                <li>회원수</li>
+                <li>3.2만<span>명</span></li>
+            </ul>
+        </div>
+        <div id="right_wrap" class="side_absol">
+        
+            <div class="login_box">
+                <div>
+                         <h3>로그인/회원가입</h3>
+                    <p>
+                        로그인 하시면 관심있는 가게 즐겨찾기. 리뷰작성 등
+                        다양한 기능을 활용하실 수 있습니다!
+                    </p>
+                    <input type="button" value="로그인" onclick="location.href='member/member_login.html'">
+                    <input type="button" value="회원가입" onclick="location.href='member/member_join.html'">
+                </div>
+            </div>
+       
+            <!-- <div id="after_login" class="login_box">
+                <div>
+                    <div class="disFlex">
+                        <div class="member_profile">
+                            <img src="images/post/review/default_profile.png">
+                        </div>
+                        <div class="my_info">
+                            <p class="nickname">파쿠파쿠</p>
+                            <span>일반회원</span> · 
+                            <a href=""><span>마이페이지</span></a>
+                        </div> 
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <a href=""><i class="fa-solid fa-star"></i>즐겨찾기 한 맛집</a>
+                                <span>10개</span>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-regular fa-comment-dots"></i>내가 쓴 리뷰</a>
+                                <span>6개</span>
+                            </li>
+                            <li>
+                                <a href=""> <i class="fa-solid fa-utensils"></i>예약 현황</a>
+                                <span>1개</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="log_out" href="">로그아웃</a>
+                </div>    
+            </div> -->
+            <div class="notice_box">
+                <h2>공지사항</h2>
+                <div class="notice_list">
+                    <a href="notice/notice_window.html" onclick="window.open(this.href, '_blank', 'width=600,height=700,toolbars=no,scrollbars=no'); return false;">
+                        <p>2022.09.01</p>
+                        <p>사업자 정보 처리 약관 변경 알림</p>
+                    </a>
+                    <a href="notice/notice_window.html" onclick="window.open(this.href, '_blank', 'width=600,height=700,toolbars=no,scrollbars=no'); return false;">
+                        <p>2022.09.01</p>
+                        <p>사업자 정보 처리 약관 변경 알림</p>
+                    </a>
+                    <a href="notice/notice_window.html" onclick="window.open(this.href, '_blank', 'width=600,height=700,toolbars=no,scrollbars=no'); return false;">
+                        <p>2022.09.01</p>
+                        <p>사업자 정보 처리 약관 변경 알림</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- LEFT CONTENTS -->
+        <div id="left_wrap">
+            <!-- SECTION 1 지역별맛집 -->
+            <div id="section_1">
+                <h2 class="sub_title"><i class="fa-solid fa-angle-right"></i> 지역별 맛집</h2>
+                <div class="disFlex justify-space-between align-center">
+                    <a href="javascript:alert('준비중입니다.');" class="s1_inner">
+                        <img src="images/sec_1/seoul.png" alt="">
+                        <div><p>서울</p></div>
+                    </a>
+                    <a href="javascript:alert('준비중입니다.');" class="s1_inner">
+                        <img src="images/sec_1/busan.png" alt="">
+                        <div><p>부산</p></div>
+                    </a>
+                    <a href="store/store_list.html" class="s1_inner">
+                        <img src="images/sec_1/daejeon.png" alt="">
+                        <div><p>대전</p></div>
+                    </a>
+                    <a href="javascript:alert('준비중입니다.');" class="s1_inner">
+                        <img src="images/sec_1/gwangju.png" alt="">
+                        <div><p>광주</p></div>
+                    </a>
+                </div>
+                <div class="disFlex justify-space-between align-center">
+                    <a href="javascript:alert('준비중입니다.');" class="s1_inner">
+                        <img src="images/sec_1/daegu.jpg" alt="">
+                        <div><p>대구</p></div>
+                    </a>
+                    <a href="javascript:alert('준비중입니다.');" class="s1_inner">
+                        <img src="images/sec_1/incheon.jpg" alt="">
+                        <div><p>인천</p></div>
+                    </a>
+                    <a href="javascript:alert('준비중입니다.');" class="s1_inner">
+                        <img src="images/sec_1/ulsan.jpg" alt="">
+                        <div><p>울산</p></div>
+                    </a>
+                    <a href="javascript:alert('준비중입니다.');" class="s1_inner">
+                        <img src="images/sec_1/jejuisland.jpg" alt="">
+                        <div><p>제주</p></div>
+                    </a>
+                </div>
+            </div>
+            <!-- SECTION 2 테마별 맛집-->
+            <div id="section_2">
+                <h2 class="sub_title"><i class="fa-solid fa-angle-right"></i> 테마별로 찾기</h2>
+                <div class="s2_slide_wrap">
+                    <div class="swiper first-swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <a href="store/store_list.html">
+                                <img src="images/sec_2/cafe.jpg" alt="">
+                                <div class="thema_text disFlex align-center">
+                                    <p>분위기 좋은</p>
+                                    <p>카페 & 브런치</p>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="store/store_list.html">
+                                <img src="images/sec_2/bab.jpg" alt="">
+                                <div class="thema_text disFlex align-center">
+                                    <p>단체 예약  가능</p>
+                                    <p>고기 & 구이</p>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="store/store_list.html">
+                                <img src="images/sec_2/take.jpg" alt="">
+                                <div class="thema_text disFlex align-center">
+                                    <p>테이크아웃 맛집</p>
+                                    <p>패스트푸드</p>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="store/store_list.html">
+                                <img src="images/sec_2/nunbab.jpg" alt="">
+                                <div class="thema_text disFlex align-center">
+                                    <p>든든한 한끼</p>
+                                    <p>국밥</p>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="store/store_list.html">
+                                <img src="images/sec_2/kai.jpg" alt="">
+                                <div class="thema_text disFlex align-center">
+                                    <p>해외 음식이 먹고 싶을 때</p>
+                                    <p>양식 & 중식</p>
+                                </div>
+                            </a>
+                          </div>
+                          <div class="swiper-slide">
+                            <a href="store/store_list.html">
+                                <img src="images/sec_2/bi.png" alt="">
+                                <div class="thema_text disFlex align-center">
+                                    <p>비오는 날 </p>
+                                    <p>술집</p>
+                                </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="myBtn myBtn-next s2Next"><i class="fa-solid fa-chevron-right"></i></div>
+                    <div class="myBtn myBtn-prev s2Prev"><i class="fa-solid fa-chevron-left"></i></div>
+                </div>
+                <div class="tag_wrap">
+                    <a href="">분위기 좋은</a><a href="">혼밥 가능</a><a href="">해장</a><a href="">인스타감성</a>
+                    <a href="">든든한 한끼</a><a href="">데이트</a><a href="">아이동반</a><a href="">몸보신</a>
+                    <a href="">튀김요리</a><a href="">무한리필</a><a href="">단체예약가능</a><a href="">디저트</a>
+                    <a href="">비오는날</a><a href="">브런치</a><a href="">맵부심</a><a href="">오마카세</a>
+                </div>
+            </div>
+            <!-- Swiper JS -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+            <!-- Initialize Swiper -->
+            <script>
+                var swiper = new Swiper(".first-swiper", {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                    slidesPerGroup: 2,
+                    loop: true,
+                    loopFillGroupWithBlank: true,
+
+                    navigation: {
+                    nextEl: ".s2Next",
+                    prevEl: ".s2Prev",
+                    },
+                });
+            </script>
+
+            <!-- SECTION 3 메뉴별 맛집-->
+            <div id="section_3">
+                <h2 class="sub_title"><i class="fa-solid fa-angle-right"></i> 메뉴별로 찾기</h2>
+                <div class="s3_slide_wrap">
+                    <div class="swiper second-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="store/store_list.html">
+                                    <img src="images/sec_3/족발.png">
+                                    <div><p>보쌈/족발</p></div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="store/store_list.html">
+                                    <img src="images/sec_3/한식.png">
+                                    <div><p>한식</p></div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="store/store_list.html">
+                                    <img src="images/sec_3/일식.png">
+                                    <div><p>돈가스/일식/회</p></div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="store/store_list.html">
+                                    <img src="images/sec_3/고기.png">
+                                    <div><p>고기/구이</p></div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="store/store_list.html">
+                                    <img src="images/sec_3/야식.png">
+                                    <div><p>야식</p></div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="store/store_list.html">
+                                    <img src="images/sec_3/양식.png">
+                                    <div><p>양식</p></div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="store/store_list.html">
+                                    <img src="images/sec_3/중식.png">
+                                    <div><p>중식</p></div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="store/store_list.html">
+                                    <img src="images/sec_3/아시안.png">
+                                    <div><p>아시안</p></div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="store/store_list.html">
+                                    <img src="images/sec_3/분식.png">
+                                    <div><p>분식</p></div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="store/store_list.html">
+                                    <img src="images/sec_3/카페.png">
+                                    <div><p>카페</p></div>
+                                </a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="store/store_list.html">
+                                    <img src="images/sec_3/패스트푸드.png">
+                                    <div><p>패스트푸드</p></div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="myBtn myBtn-next s3Next"><i class="fa-solid fa-chevron-right"></i></div>
+                    <div class="myBtn myBtn-prev s3Prev"><i class="fa-solid fa-chevron-left"></i></div>
+                </div>
+                <script>
+                    var swiper = new Swiper(".second-swiper", {
+                        slidesPerView: 5,
+                        spaceBetween: 17,
+                        slidesPerGroup: 1,
+                        loop: true,
+                        loopFillGroupWithBlank: true,
+    
+                        navigation: {
+                        nextEl: ".s3Next",
+                        prevEl: ".s3Prev",
+                        },
+                    });
+                </script>
+            </div>
+            <!-- SECTION 4 리뷰 -->
+            <div id="section_4">
+                <h2 class="sub_title"><i class="fa-solid fa-angle-right"></i> 리뷰보고 찾아가는 맛집</h2>
+                <div class="s4_review_wrap disFlex justify-space-between">
+                    <div class="s4_review">
+                        <a href="store/store_view.html" class="review_img">
+                            <img src="images/post/review/buchimgae.jpg" alt="">
+                            <div class="disFlex">
+                                <h4>옛마당</h4>
+                                <p>대전광역시 중구 오류동 11-111</p>
+                                <p> > 가게 정보 보기</p>
+                            </div>
+                        </a>
+                        <a href="review/review_view.html" class="review_text">
+                            <div class="review_profile disFlex justify-space-between">
+                                <div><img src="images/sec_1/busan.png" alt=""></div>
+                                <p>파쿠파쿠</p>
+                                <p>
+                                    <span>★★★★☆</span>
+                                    <span>2022-09-01</span>
+                                </p>
+                            </div>
+                            <p>
+                                비오는날 갑자기 땡겨서 근처에 맛있는 냄새가나길래 오늘 처음 가봤어요~! 생각보다 맛있어서 깜짝!  
+                                비오는날 갑자기 땡겨서 근처에 맛있는 냄새가나길래...
+                            </p>
+                        </a>
+                    </div>
+                    <div class="s4_review">
+                        <a href="store/store_view.html" class="review_img">
+                            <img src="images/post/review/r3.jpg" alt="">
+                            <div class="disFlex">
+                                <h4>가게이름</h4>
+                                <p>대전광역시 중구 오류동 11-111</p>
+                                <p> > 가게 정보 보기</p>
+                            </div>
+                        </a>
+                        <a href="review/review_view.html" class="review_text">
+                            <div class="review_profile disFlex justify-space-between">
+                                <div><img src="images/post/review/default_profile.png" alt=""></div>
+                                <p>봄봄이</p>
+                                <p>
+                                    <span>★★★★☆</span>
+                                    <span>2022-09-01</span>
+                                </p>
+                            </div>
+                            <p>
+                               부모님 생신에 모셔간 고급 레스토랑이에요~ 본점은 서울인데 대전에 새로 3호점이
+                               오픈한거라 가게 내부도 깨끗하고 서비스도 맛도 최고였어요~!!
+                            </p>
+                        </a>
+                    </div>
+                    <div class="s4_review">
+                        <a href="store/store_view.html" class="review_img">
+                            <img src="images/post/review/r2.jpg" alt="">
+                            <div class="disFlex">
+                                <h4>가게이름</h4>
+                                <p>대전광역시 중구 오류동 11-111</p>
+                                <p> > 가게 정보 보기</p>
+                            </div>
+                        </a>
+                        <a href="review/review_view.html" class="review_text">
+                            <div class="review_profile disFlex justify-space-between">
+                                <div><img src="images/sec_3/패스트푸드.png" alt=""></div>
+                                <p>요리왕비룡</p>
+                                <p>
+                                    <span>★★★-☆☆</span>
+                                    <span>2022-09-01</span>
+                                </p>
+                            </div>
+                            <p>
+                                분위기 좋은데서 식사하고 싶어서 수소문해서 찾아낸 숨은 맛집! 여러분께
+                                소개해드리면 혹시 웨이팅생기까 두렵지만 그래도 자랑하고싶어서 리뷰씁니다 ㅠㅠ
+                            </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="s4_review_wrap disFlex justify-space-between">
+                    <div class="s4_review">
+                        <a href="store/store_view.html" class="review_img">
+                            <img src="images/post/review/r4.jpg" alt="">
+                            <div class="disFlex">
+                                <h4>식당이름</h4>
+                                <p>대전광역시 중구 오류동 11-111</p>
+                                <p> > 가게 정보 보기</p>
+                            </div>
+                        </a>
+                        <a href="review/review_view.html" class="review_text">
+                            <div class="review_profile disFlex justify-space-between">
+                                <div><img src="images/sec_3/카페.png" alt=""></div>
+                                <p>FoodLover</p>
+                                <p>
+                                    <span>★★★★☆</span>
+                                    <span>2022-09-01</span>
+                                </p>
+                            </div>
+                            <p>
+                                얼큰한 찌개 주문하면 밥은 무한리필해주시는 정넘치는 식당이에요
+                                어르신들 모셔가도 다들 만족하셨어요~
+                            </p>
+                        </a>
+                    </div>
+                    <div class="s4_review">
+                        <a href="store/store_view.html" class="review_img">
+                            <img src="images/post/review/r5.jpg" alt="">
+                            <div class="disFlex">
+                                <h4>가게이름</h4>
+                                <p>대전광역시 중구 오류동 11-111</p>
+                                <p> > 가게 정보 보기</p>
+                            </div>
+                        </a>
+                        <a href="review/review_view.html" class="review_text">
+                            <div class="review_profile disFlex justify-space-between">
+                                <div><img src="images/post/review/r3.jpg" alt=""></div>
+                                <p>이지쓰</p>
+                                <p>
+                                    <span>★★★★☆</span>
+                                    <span>2022-09-01</span>
+                                </p>
+                            </div>
+                            <p>
+                                라자냐라고 들어는 봤지만 실제로 먹어본 적은 없었는데 여기서 먹어보고 완전 반했어요~~
+                                서양에서는 가정집에서 편하게 먹는 음식이라는데 한국에서는 막상...
+                            </p>
+                        </a>
+                    </div>
+                    <div class="s4_review">
+                        <a href="store/store_view.html" class="review_img">
+                            <img src="images/post/review/r6.jpg" alt="">
+                            <div class="disFlex">
+                                <h4>식당이름</h4>
+                                <p>대전광역시 중구 오류동 11-111</p>
+                                <p> > 가게 정보 보기</p>
+                            </div>
+                        </a>
+                        <a href="review/review_view.html" class="review_text">
+                            <div class="review_profile disFlex justify-space-between">
+                                <div><img src="images/post/review/r2.jpg" alt=""></div>
+                                <p>탄단지</p>
+                                <p>
+                                    <span>★★★☆☆</span>
+                                    <span>2022-09-01</span>
+                                </p>
+                            </div>
+                            <p>
+                                고급스러우면서 친근한 맛이 나는 볶음밥을 먹을 수 있는곳. 재방문 의사 100%입니다.
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- BOTTOM CONTENTS -->
+        <div id="bottom_wrap">
+            <!-- SECTION 5 맛집랭킹-->
+            <div id="section_5">
+                <h2 class="sub_title"><i class="fa-solid fa-angle-right"></i> 에디터 선정 맛집 BEST</h2>
+                <div class="ranking_wrap disFlex justify-space-between">
+                    <a href="store/store_view.html">
+                        <div>1</div>
+                        <div class="ranking_box disFlex">
+                            <div class="ranking_img"><img src="images/sec_5/옥천순대매운족발_1.jpg"></div>
+                            <div class="ranking_text disFlex">
+                                <h4>골목대장포차<span class="star">★★★★★</span><span class="co-gray">(4.8)</span></h4>
+                                <p class="co-gray">대전광역시 동구 대전로 664</p>
+                                <h5><span>우리맛집 <span>현장요원</span>의 한마디!</span></h5>
+                                <p>동구 대동역 근처에 새로생긴 술집! 정겨운 분위기에 가볍게한잔 하고싶을때
+                                    가깝게 마시러 갈 수 있는곳!
+                                </p>
+                                <p class="co-gray">
+                                    #동네맛집 #술집 #회식 #예약가능
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="store/store_view.html">
+                        <div>2</div>
+                        <div class="ranking_box disFlex">
+                            <div class="ranking_img"><img src="images/sec_5/두두당_3.jpg"></div>
+                            <div class="ranking_text disFlex">
+                                <h4>두번째맛집<span class="star">★★★★★</span><span class="co-gray">(4.8)</span></h4>
+                                <p class="co-gray">대전광역시 동구 대전로 664</p>
+                                <h5><span>우리맛집 <span>현장요원</span>의 한마디!</span></h5>
+                                <p>동구 대동역 근처에 새로생긴 술집! 정겨운 분위기에 가볍게한잔 하고싶을때
+                                    가깝게 마시러 갈 수 있는곳!
+                                </p>
+                                <p class="co-gray">
+                                    #동네맛집 #술집 #회식 #예약가능
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="store/store_view.html">
+                        <div>3</div>
+                        <div class="ranking_box disFlex">
+                            <div class="ranking_img"><img src="images/sec_5/산내돌짜장.jpg"></div>
+                            <div class="ranking_text disFlex">
+                                <h4>세번째맛집<span class="star">★★★★★</span><span class="co-gray">(4.8)</span></h4>
+                                <p class="co-gray">대전광역시 동구 대전로 664</p>
+                                <h5><span>우리맛집 <span>현장요원</span>의 한마디!</span></h5>
+                                <p>동구 대동역 근처에 새로생긴 술집! 정겨운 분위기에 가볍게한잔 하고싶을때
+                                    가깝게 마시러 갈 수 있는곳!
+                                </p>
+                                <p class="co-gray">
+                                    #동네맛집 #술집 #회식 #예약가능
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="store/store_view.html">
+                        <div>4</div>
+                        <div class="ranking_box disFlex">
+                            <div class="ranking_img"><img src="images/sec_5/지안.jpg"></div>
+                            <div class="ranking_text disFlex">
+                                <h4>네번째맛집<span class="star">★★★★★</span><span class="co-gray">(4.8)</span></h4>
+                                <p class="co-gray">대전광역시 동구 대전로 664</p>
+                                <h5><span>우리맛집 <span>현장요원</span>의 한마디!</span></h5>
+                                <p>동구 대동역 근처에 새로생긴 술집! 정겨운 분위기에 가볍게한잔 하고싶을때
+                                    가깝게 마시러 갈 수 있는곳!
+                                </p>
+                                <p class="co-gray">
+                                    #동네맛집 #술집 #회식 #예약가능
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="store/store_view.html">
+                        <div>5</div>
+                        <div class="ranking_box disFlex">
+                            <div class="ranking_img"><img src="images/sec_5/카페.jpg"></div>
+                            <div class="ranking_text disFlex">
+                                <h4>다섯번째맛집<span class="star">★★★★★</span><span class="co-gray">(4.8)</span></h4>
+                                <p class="co-gray">대전광역시 동구 대전로 664</p>
+                                <h5><span>우리맛집 <span>현장요원</span>의 한마디!</span></h5>
+                                <p>동구 대동역 근처에 새로생긴 술집! 정겨운 분위기에 가볍게한잔 하고싶을때
+                                    가깝게 마시러 갈 수 있는곳!
+                                </p>
+                                <p class="co-gray">
+                                    #동네맛집 #술집 #회식 #예약가능
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="store/store_view.html">
+                        <div>6</div>
+                        <div class="ranking_box disFlex">
+                            <div class="ranking_img"><img src="images/sec_5/이가촌_4.jpg"></div>
+                            <div class="ranking_text disFlex">
+                                <h4>여섯번째맛집<span class="star">★★★★★</span><span class="co-gray">(4.8)</span></h4>
+                                <p class="co-gray">대전광역시 동구 대전로 664</p>
+                                <h5><span>우리맛집 <span>현장요원</span>의 한마디!</span></h5>
+                                <p>동구 대동역 근처에 새로생긴 술집! 정겨운 분위기에 가볍게한잔 하고싶을때
+                                    가깝게 마시러 갈 수 있는곳!
+                                </p>
+                                <p class="co-gray">
+                                    #동네맛집 #술집 #회식 #예약가능
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+           <!-- SECTION 6 방송에 나온 맛집-->
+           <div id="section_6">
+        <h2 class="sub_title"><i class="fa-solid fa-angle-right"></i> 유튜버가 다녀간 맛집</h2>
+                <div class="s6_wrap disFlex justify-space-between">
+                    <div class="s6_box">
+                        <div>
+                            <a href="https://www.youtube.com/watch?v=CQpxJhN16pM" target='_blank'>
+                                <img src="images/sec_6/1500회전초밥_쯔양.png">
+                                <div class="hover_box">▷ 영상 보러가기</div>
+                            </a>
+                        </div>
+                        <p>1500회전초밥_쯔양 2021.06.26 </p>
+                    </div>
+                    <div class="s6_box">
+                        <div>
+                            <a href="https://www.youtube.com/watch?v=RskLorPoYEY" target='_blank'>
+                                <img src="images/sec_6/왕순대_맛상무.png">
+                                <div class="hover_box">▷ 영상 보러가기</div>
+                            </a>
+                        </div>
+                        <p>대전왕순대_맛상무 2019.12.13 </p>
+                    </div>
+                    <div class="s6_box">
+                        <div>
+                            <a href="https://www.youtube.com/watch?v=tFFtj7P3_fk" target='_blank'>
+                                <img src="images/sec_6/막장집.png">
+                                <div class="hover_box">▷ 영상 보러가기</div>
+                            </a>
+                        </div>
+                        <p>대전막장집_쯔양 2021.05.12 </p>
+                    </div>
+                </div>
+            </div>
+            <!-- SECTION 7-->
+            <div id="section_7" class="disFlex justify-space-between">
+                <div class="s7_box disFlex align-center">
+                    <h4>
+                        <span><i class="fa-solid fa-quote-left"></i></span>
+                        <p>우리 가게도 소개하고싶다면?</p>
+                        <span><i class="fa-solid fa-quote-right"></i></span>
+                    </h4>
+                    <p>우리 가게 정보를 등록하여 홍보하고 고객의 입맛을 사로잡아보세요!</p>
+                    <input type="button" name="" value="가게 정보 등록하기">
+                </div>
+                <div class="s7_box disFlex align-center">
+                    <h4>
+                        <span><i class="fa-solid fa-quote-left"></i></span>
+                        <p>나만의 리뷰를 작성하고싶다면?</p>
+                        <span><i class="fa-solid fa-quote-right"></i></span>
+                    </h4>
+                    <p>내가 가본 맛집에 솔직리뷰를 달아 나만의 맛집 리스트를 만들어보세요!</p>
+                    <input type="button" name="" value="리뷰 등록하기">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal -->
+    
+    <a href="#" class="top">TOP</a>
+    <!-- /CONTENT END -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div id="footer_inner" class="disFlex justify-space-between">
+            <div class="logo"><img src="images/logo_black.png" alt=""></div>
+            <div>
+                <ul class="footer_ul disFlex">
+                    <li><a href="">개인정보이용약관</a></li>
+                    <li>|</li>
+                    <li><a href="">고객센터</a></li>
+                    <li>|</li>
+                    <li><a href="">1:1 문의</a></li>
+                    <li>|</li>
+                    <li><a href="">서비스 소개</a></li>
+                    <li>|</li>
+                    <li><a href="">광고 및 제휴</a></li>
+                </ul>
+                <p>
+                    ㈜ 테이스트립  대표이사: 문보미<br>
+                    서울특별시 강남구 봉은사로 479, 479타워 11층  사업자 등록번호: 742-86-00224<br>
+                    통신판매업 신고번호: 2017-서울강남-01779 고객센터 042-223-0830
+                </p>
+                <p>
+                    © 2022 Tastrip Co., Ltd. All rights reserved.
+                </p>
+            </div>
+            <div class="sns">
+                <i class="fa-brands fa-square-facebook fa-2x"></i>
+                <i class="fa-brands fa-square-instagram fa-2x"></i>
+                <i class="fa-brands fa-square-twitter fa-2x"></i>
+            </div>
+        </div>
+    </footer>
+    <!-- /FOOTER END -->
+</body>
+</html>

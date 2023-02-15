@@ -1,0 +1,366 @@
+*{
+    font-family: 'Pretendard-Regular';
+}
+a{
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+.disFlex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
+header{
+    width: 100%;
+    height: 80px;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.291) 0px 8px 24px;
+    position: relative;
+}
+header a{
+    position: absolute;
+    display: inline-block;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+body{
+    background-color: #f4f4f4;
+}
+.content{
+    width: 500px;
+    margin: auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+.profile{
+    position: relative;
+    width: 100%;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: #f25d07 solid 2px;
+}
+.profile p{
+    position: absolute;
+    font-size: 18px;
+}
+.profile i{
+    color: rgb(131, 131, 131);
+    margin-left: 3px; 
+}
+.member_profile{
+    width: 50px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.5px 2.5px 3.3px;
+    overflow: hidden;
+}
+.member_profile img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.nickname{
+    left: 62px;
+}
+.reg_date{
+    right: 10px;
+}
+.text_area p{
+    display: inline-block;
+}
+.text_area p i{
+    margin: 0 -5px;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    color: #f27b35;
+}
+.text_area div:first-child a{
+    float: right;
+    padding: 0 5px;
+    color: #8c7568;
+}
+.text_area div:first-child a:hover{
+    color: #f27b35;
+    text-decoration: underline;
+}
+.text_area > p:nth-child(2){
+	display : block;
+    margin: 15px 0;
+    line-height: 20px;
+}
+.review_photo{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+    overflow-x: scroll;
+}
+.review_photo img{
+    height: 100%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.text_area > a{
+    display: inline-block;
+    margin-top: 10px;
+    color: #f25d07;
+    text-decoration: underline;
+}
+
+/*------ 모달창 --------*/
+#modal{
+    display: none;
+    position: fixed;
+    transition: all 0.3;
+    left: 0; 
+    top: 0;
+    width: 100%; height: 100%;
+    padding-top: 30px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#modal .swiper_box{
+    width: 1000px;
+    height: 90vh;
+    margin: auto;
+}
+
+.closeBtn{
+    margin: auto;
+    margin-top:30px;
+    padding: 10px 30px;
+    border:none;
+    border-radius:10px;
+    background-color: gray;
+    color:white;
+    display: block;
+    text-align: center;
+    cursor:pointer;
+}
+
+/* 닫기 버튼 꾸미기 */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover, .close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*----- swiper ------*/
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: rgb(23, 23, 23);
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mySwiper2 {
+    height: 80%;
+    width: 100%;
+  }
+
+  .mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    margin-top: 10px;
+    opacity: 0.4;
+  }
+
+  .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+/*----------- REVIEW_WRITE -----------------*/
+.text_area .star_num{
+    float: left;
+    width: 300px;
+}
+.text_area .star_num p{
+    margin-right: 5px;
+    font-size: 18px;
+    line-height: 30px;
+}
+.text_area .write_store{
+    margin-top: 5px;
+    float: right;
+
+}
+.star {
+    position: relative;
+    font-size: 18px;
+    color: #bbb;
+}
+.star-font{
+	font-family: 'YanoljaYacheR';
+	font-size:28px;
+}
+.star input{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+.star span {
+    width: 0;
+    position: absolute; 
+    left: 0;
+    color: #f25b35;
+    overflow: hidden;
+    pointer-events: none;
+}
+.text_area textarea{
+    width: 478px;
+    height: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 16px;
+    resize: none;
+    border: #8c7568 solid 1px;
+}
+.text_area textarea:focus{
+	border: 2px solid #f25b35;
+	outline:none;
+}
+.star_num_view{
+	color:#f25d07;
+	font_size:30px;
+	line-height: 30px;
+	padding-left:10px;
+}
+#att_zone {
+    min-height: 100px;
+    border: #8c7568 solid 1px;
+}
+#att_zone:empty:before {
+    content: attr(data-placeholder);
+    color: #999;
+    font-size: .9em;
+}
+#att_zone:empty{
+    padding: 5px;
+}
+#att_zone>div{
+    display:inline-block;
+    position:relative;
+    width:47.5%;
+    margin:5px;
+    z-index:1; 
+}
+#att_zone>div>img{
+    width:100%;
+    height:100%;
+    z-index:none;
+}
+#att_zone>div>input{
+    height:30px;
+    position:absolute;
+    font-size:18px;
+    font-weight: bold;
+    top:-5px;
+    right:0px;
+    z-index:999;
+    color:rgb(21, 15, 15);
+    background-color: rgb(255, 255, 255);
+    border: 0;
+}
+.btn-upload {
+    width: 80px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    background: #fff;
+    border: 1px solid rgb(77,77,77);
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-upload:hover{
+    background: rgb(130, 130, 130);
+    color: #fff;
+}
+#btnAtt {
+    display: none;
+}
+.review_button{
+    margin: 15px 0;
+    justify-content: center;
+}
+.review_button input{
+    display: block;
+    width: 80px;
+    height: 35px;
+    margin: 0 5px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    background-color: #f25d07;
+    cursor: pointer;
+}
+.review_button input:last-child{
+    background-color: #8c7568;
+}

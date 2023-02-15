@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/review.css">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://kit.fontawesome.com/17da812ad5.js" crossorigin="anonymous"></script>
+    <title>REVIEW</title>
+</head>
+<body>
+    <header>
+        <a href="../index.html">
+            <img src="../images/logo_design_4.png" alt="로고">
+        </a>
+    </header>
+    <div class="content">
+        <div>
+            <div class="disFlex profile">
+                <div class="member_profile">
+                    <img src="../images/sec_1/busan.png">
+                </div>
+                <p class="nickname">파쿠파쿠</p>
+                <p class="reg_date">2022.09.01<i class="fa-solid fa-pencil"></i></p>
+            </div>  
+            <a href=""></a> 
+            <div class="text_area">
+                <div>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star-half-stroke"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>(1.5)</span>
+                    </p>
+                    
+                    <a href="">삭제</a>
+                    <a href="../review/review_update.html">수정</a>
+                </div>
+                <p>
+                    맛있는 장어 덮밥집
+                    <br><br>
+                    예약을 하고 가지 않아서 도착하여 웨이팅을 걸고 조금 기다려서 식사를 하였습니다.
+                    매장이 넓어서 회전은 금방 금방 되었습니다. 방이 여러곳에 있는 것 같은데 제가 들어간 곳은 얼추 8팀 정도가 앉을 수 있었습니다.
+                    <br><br>
+                    가격이 조금 나가는 대표 메뉴인 히쯔마부시를 시켰습니다.
+                    <br><br>
+                    계란 푸딩이 빈속을 살짝 풀어주고, 단짠단짠한 장어 덮밥과 김과 밥을 같이 먹으니 맛있었습니다.
+                    조금 먹다가 옆에 있는 보온통의 오차즈케 육수를 넣어 먹으니 더 맛있었습니다. 약간 짭짤한 육수였는데 느끼함도 좀 줄고 풍미가 더 올라가는 느낌이였습니다.
+                    <br><br>
+                    조금 오늘은 가격이 나가는 장어덮밥이 땡긴다 할때 가기 좋을 거 같습니다 ㅎㅎ
+                </p>
+                <a href="../store/store_view.html">@마루심 - <span>대전 동구</span></a>
+                <div class="review_photo">
+                    <img src="../images/review/870475_1661158051213_9322.jpg">
+                    <img src="../images/review/870475_1661158051213_9323.jpg">
+                    <img src="../images/sec_5/두두당_3.jpg">
+                    <img src="../images/review/870475_1661158051213_9322.jpg">
+                    <img src="../images/review/870475_1661158051213_9322.jpg">
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div id="modal">
+        <div>
+            <span class="close">&times;</span>
+            <div class="swiper_box">
+                <div
+                    style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                    class="swiper mySwiper2"
+                >
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../images/review/870475_1661158051213_9322.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/review/870475_1661158051213_9323.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/sec_5/두두당_3.jpg"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div thumbsSlider="" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../images/review/870475_1661158051213_9322.jpg"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/review/870475_1661158051213_9323.jpg"/>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../images/sec_5/두두당_3.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 10,
+          slidesPerView: 4,
+          freeMode: true,
+          watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+          spaceBetween: 10,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          thumbs: {
+            swiper: swiper,
+          },
+        });
+    </script>
+    <script>
+         // 리뷰 상세보기 사진 모달창
+        $('#modal').hide();
+        $('.review_photo img').click(function(){
+            $('#modal').fadeIn();
+        });
+        $('.close').click(function(){
+            $('#modal').fadeOut();
+        });
+    </script>
+</body>
+</html>

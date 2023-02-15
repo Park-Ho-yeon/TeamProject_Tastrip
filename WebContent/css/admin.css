@@ -1,0 +1,566 @@
+*{
+    font-family: 'Pretendard-Regular';
+    box-sizing: border-box;
+}
+a{
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+.m_auto{
+    margin: auto;
+}
+.disFlex{
+    display: flex;
+}
+.justify-space-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: white;
+    box-shadow: rgba(149, 157, 165, 0.291) 0px 8px 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    
+    display: flex;
+    align-items: center;
+}
+header a{
+    display: inline-block;
+    margin: auto;
+}
+/*-------- MEMBER_LIST ----------*/
+#admin_list{
+    width: 1320px;
+    margin: auto;
+    margin-top: 80px;
+}
+#admin_list .top_header{
+    width: 100%;
+    height: 160px;
+    text-align: center;
+    background-color: #f2e4dc;
+    border-radius: 0 0 20px 20px;
+}
+#admin_list .top_header h1{
+    line-height: 50px;
+    font-size: 32px;
+    font-weight: 200;
+    letter-spacing: 5px;
+    padding: 30px;
+}
+#admin_list .top_header h1 span{
+    font-weight: 200;
+    color: #baa69a;
+}
+.manager_box{
+    overflow: hidden;
+}
+.top_header p{
+    font-size: 35px;
+    line-height: 100px;
+}
+.manager_box{
+    padding: 20px 0;
+    padding-right: 20px;
+}
+.left_box{
+    float: left;
+    width: 300px;
+    padding: 15px;
+    /* background-color: #F2f2f2; */
+}
+.left_box p{
+    width: 100%;
+    padding: 13px 0;
+    margin-bottom: 10px;
+    background-color: #8c7568;
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    border-radius: 10px;
+}
+.main_menu{
+    font-size: 20px;
+    background-color: white;
+}
+.main_menu>li>a{
+    display: block;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 3px;
+    /* border-top: 1px solid #8c7568; */
+    border-bottom: 2px solid #8c7568;
+    /* background-color: #baa69a; */
+    /* color: white; */
+    font-weight: 600;
+    color: #8c7568;
+}
+.sub_menu{
+    font-size: 18px;
+    padding-left: 15px;
+    color: #8c7568;
+}
+.sub_menu a{
+    display: block;
+    padding: 10px 5px;
+}
+.sub_menu a:hover{
+    font-weight: 600;
+}
+.sub_menu a.on{
+    font-weight: 600;
+}
+.sub_menu a:not(.on)::before{
+    content: '-';
+    margin-right: 5px;
+    color: #8c7568;
+}
+
+.left_box li i{
+    margin-right: 5px;
+    color: rgb(211, 140, 54);
+}
+.right_box{
+    min-height: calc(100vh - 462px);
+    float: right;
+    width: 980px; 
+    padding: 15px; 
+}
+.right_box>div:first-child{
+	padding : 0 10px;
+}
+.right_box .sort_box{
+    margin-bottom: 5px;
+}
+.right_box input,
+.right_box select,
+.right_box button{
+    border-radius: 5px;
+    border: 1px solid #8c7568;
+}
+.right_box select{
+    padding: 5px;
+    font-size: 15px;
+    border:none;
+    border-bottom:1px solid #8c7568;
+    border-radius:0;
+}
+.right_box select:focus{
+	outline:none;
+}
+.right_box .search_box input{
+    width: 150px;
+    height: 32px;
+    padding: 5px;
+}
+.right_box .search_box button{
+    width: 32px;
+    height: 32px;
+    background-color:white;
+}
+.right_box .search_box button i{
+	margin-right:0px;
+}
+.right_box table{
+    width: 100%;
+}
+.right_box .blank{
+    height: 15px;
+}
+.right_box table{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.right_box table thead tr{
+    background-color: #f2e4dc;
+}
+.right_box table th{
+    padding: 15px 0;
+    /* border-bottom: rgb(242,142,38) solid 1px; */
+    border-right: #ffffff solid 1px;
+    text-align: center;
+}
+.right_box table th:first-child{
+    border-radius:20px 0px 0px 20px;
+}
+.right_box table th:last-child{
+    border: 0;
+    border-radius:0 20px 20px 0;
+}
+.right_box table .t_left{
+	text-align: left;
+}
+.right_box table tbody tr:not(.no_result){
+    border-bottom: lightgray solid 1px;
+}
+.right_box table:not(.write_tbl) tbody tr.notice_tr{
+	cursor: default;
+}
+.right_box table:not(.write_tbl) tbody tr:not(.no_result):hover{
+    background-color: #f4f4f4;
+}
+.right_box table:not(.write_tbl) tbody tr:not(.no_pointer):hover{
+	cursor: pointer;
+}
+.right_box table:not(.write_tbl) tbody tr.no_result td{
+	padding: 30px 0;
+}
+.right_box table tbody tr:hover .fa-circle-info{
+    color: black;
+}
+.right_box table tbody tr:hover .fa-person-through-window{
+    color: red;
+}
+.right_box td{
+    padding: 15px 0;
+    text-align: center;
+    /* line-height: 50px; */
+    vertical-align: middle;
+    font-size: 16px;
+}
+.right_box td.td_left{
+	text-align:left;
+	padding-left:7px;
+}
+.right_box td.td_left.moreLeftPad{
+	padding-left:25px;
+}
+.right_box td.td_left.moreLeftPad .review_btn{
+	display: inline-block;
+}
+.right_box table tbody td i{
+    font-size: 20px;
+    color: gray;
+    vertical-align: middle;
+}
+
+.right_box table tbody a{
+	vertical-align: middle;
+	font-size:16px;
+	line-height:20px;
+}
+
+.right_box .member_profile{
+    margin: auto;
+    width: 70px;
+    height: 70px;
+    border: 3px solid white;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.right_box .member_profile img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.cursorSet{
+	cursor: pointer;
+}
+
+.clean span{
+    display: none;
+    padding:3px 5px;
+    border:1px solid gray;
+    background-color:white;
+    color:gray;
+    border-radius:5px;
+}
+.page{
+    width: 300px;
+    margin: auto;
+    text-align: center;
+    padding: 15px 0;
+}
+.page a{
+    padding: 4px;
+    margin : 0 10px;
+    font-size: 16px;
+    /* border: 1px solid #e0e0e0; */
+}
+.page .choice{
+    font-weight: 600;
+    color: #f27b35;
+    text-decoration: underline;
+}
+.write{
+    text-align: right;
+}
+.write a{
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    background: #8c7568;
+    border: 1px solid #8c7568;
+    border-radius: 5px;
+}
+.right_box table tbody td i.fa-comment-dots{
+	color:#baa69a;
+}
+.right_box table tbody td i.fa-heart{
+	color:#ff8080;
+}
+.mlbtn{
+	display:inline-block;
+	padding: 0 5px;
+}
+.mlbtn:not(.c0):hover{
+	text-decoration: underline;
+	font-weight:600;
+}
+.c0:hover{
+	cursor:default;
+}
+.review_btn{
+	margin-bottom:5px;
+}
+
+/* -------공지사항 글쓰기------ */
+.right_box i{
+    color: #baa69a;
+    margin-right: 5px;
+}
+.right_box h1{
+    font-size: 22px;
+    padding: 10px;
+    border-bottom: 1px solid #8c7568;
+    margin-bottom: 30px;
+}
+.right_box .write_tbl td{
+    text-align: left;
+}
+.write_tbl input,
+.write_tbl textarea{
+    width: 100%;
+    padding: 7px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #8c7568;
+}
+.write_tbl input{
+    height: 40px;
+}
+.write_tbl textarea{
+    height: 300px;
+}
+.write_tbl .content{
+	padding:30px 0;
+}
+.btn_group{
+    text-align: right;
+    padding: 10px 0;
+}
+.btn_group input{
+    padding: 7px 19px;
+    font-size: 16px;
+    border: none;
+    background-color: #8c7568;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.btn_group .c_btn{
+    background-color: gray;
+}
+/* ---- 멤버 상세페이지 ---- */
+.content_wrap_2{
+    padding: 10px 0px;
+    text-align: center;
+    border-bottom: 1px solid #f2e4dc;
+}
+.content_wrap_2 h1{
+    border-bottom: 1px solid #cdaf9d;
+    padding-left:110px;
+    padding-bottom: 10px;
+    text-align: left;
+    font-size: 20px;
+
+}
+.content_wrap_2>table{
+    text-align: left;
+    font-size: 18px;
+    /* width: 55%; */
+    margin: auto;
+    margin-top: 40px;
+}
+
+.content_wrap_2>table tr{
+    /* padding-top: 10px; */
+    height: 60px;
+}
+.content_wrap_2>table th{
+    width: 190px;
+    letter-spacing: 2px;
+    vertical-align: middle;
+    /* padding-top: 10px; */
+}
+.content_wrap_2>table th::before{
+    content: '-';
+    color: #f25d07;
+    font-weight: 900;
+    padding-right: 10px;
+}
+.content_wrap_2>table .before_none::before{
+    display: none;
+}
+.content_wrap_2>table td{
+    vertical-align: middle;
+}
+.content_wrap_2>table span{
+    font-size: 14px;
+}
+.pf_photo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid white;
+    background-color: #999;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.pf_photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*--------사업자 상세 페이지--------*/
+.member_view_wrap{
+	width: 1000px;
+    padding: 15px;
+    float:right;
+}
+.member_view_wrap>div>div{
+    width: 50%;
+}
+.member_info{
+    /* border: 1px solid #baa69a; */
+    padding-bottom: 30px;
+    border-bottom: 0;
+}
+.bs_view_title{
+	font-size:22px;
+	text-align: center;
+	line-height: 48px;
+	border-bottom:1px solid #f2e4dc;
+	margin-bottom:15px;
+}
+.bsm_store{
+	margin-top:30px;	
+	margin-left:20px;
+	padding: 0 20px;
+}
+.bsm_store h2{
+	text-align: center;
+	font-size:18px;
+	margin-bottom:20px;
+}
+.bsm_store .store_list{
+	font-size:18px;
+}
+.bsm_store .store_list li{
+	padding: 20px 30px;
+	margin: 10px 0;
+	width: 100%;
+	display:flex;
+	justify-content: space-between;
+	text-align: center;
+	box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+	background-color: white; 
+	border-radius: 10px;
+	font-weight: 600;
+}
+.bsm_store .store_list li span{
+	font-weight: 400;
+}
+.bsm_btn{
+	text-align: center;
+	border-top: 1px solid #f2e4dc;
+	margin-top:40px;
+}
+.bsm_btn input{
+	display: inline-block;
+    font-size: 16px;
+    padding: 10px 23px;
+    background-color: #8c7568;
+    color: white;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.st_1{
+	color: #f25d07;
+}
+.st_3{
+	color:gray;
+}
+/*--------- 회원 리뷰 목록 ----------*/
+.member_review{
+    padding: 15px 50px;
+}
+.member_review h1{
+    margin-top: 30px;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+.member_review table{
+    text-align: center;
+    width: 100%;
+}
+.member_review table th{
+    padding: 15px 0;
+}
+.member_review table thead{
+    border-top: 1px solid #8c7568;
+    border-bottom: 1px solid #8c7568;
+}
+.member_review table td{
+    padding: 20px 0;
+    vertical-align: middle;
+}
+.member_review table .td_left{
+	padding-left:10px;
+    text-align: left;
+    line-height:20px;
+}
+.member_review table tbody tr{
+    border-bottom: 1px solid #e2e2e2;
+}
+.re table tbody tr{
+    cursor:pointer;	
+}
+.member_review table tbody tr>td:first-child{
+    color: #4d372b;
+    font-weight: 600;
+}
+.member_review table tbody tr>td:nth-child(2){
+    color: #6c6c6c;
+}
+.member_review table tbody tr>td:nth-child(3){
+    color: #f25d07;
+}
+.input_button{
+    padding: 10px 0;
+    text-align: center;
+    margin: 0 10px;
+    margin-top:20px;
+    border-bottom: rgb(242,142,38) solid 2px;
+}
+.input_button input{
+    display: inline-block;
+    height: 30px;
+    width: 60px;
+    text-align: center;   
+}
+
